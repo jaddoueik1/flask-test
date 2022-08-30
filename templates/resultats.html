@@ -1,0 +1,135 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <title>Crée son avion</title>
+        <link rel="stylesheet" href='/static/stylesheets/styles.css' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+        
+    </head>
+    <body>
+        <header>
+            <nav id="avion_nav">
+              <ul>
+                <li id="logo">
+                    <a href="/"><img src="/static/media/ELISA.png" width="70" /></a>
+                  </li>
+                  <li>
+                    <a href="route.html">Itinéraire de vol</a>
+                  </li>
+                  <li>
+                    <a href="avion.html">Créer son avion</a>
+                  </li>
+                  <li>
+                    <a href="lesPropiete.html">Découvrir</a>
+                  </li>
+                  <li>
+                    <a href="/#presentation">A propos</a>
+                  </li>
+              </ul>
+            </nav>
+          </header>
+
+
+        <section id="intro_avion">
+            <h1>Conception de votre avion</h1>
+            <p>Voici votre avion selon les paramètres que vous avez entré:
+              <br><br>
+              <ul >
+                <li><a href="#disposition"> La disposition des sièges.</a></li>
+                <li><a href="#aérodynamique">Le profil aérodynamique de l'aile de votre avion.</a></li>
+                <li><a href="#payload_di">Diagramme Charge Marchande-Distance Franchissable.</a></li>
+                <li><a href="#graphes">Le tapis.</a></li>
+                <li><a href="#Prix$">Le PRIX $.</a></li>
+              </ul>
+            </p>
+        </section>
+
+        <section id="aircraft">
+          <div id="disposition">
+            <h2>La disposition des sièges</h2>
+            <img src="/static/resultats/aircraft.png" >
+          </div>
+          <div id="aérodynamique">
+            <br>
+            <br>
+            <h2> Le profil aérodynamique de l'aile de votre avion</h2>
+            <img src="/static/resultats/airfoil.png" >
+          </div>
+        </section>
+
+
+        <section id="payload_di">
+            <h2>Diagramme Charge Marchande-Distance Franchissable</h2>
+
+            <img src="/static/resultats/range.png">
+        </section>
+
+
+        <section id="graphes">
+            <h2>Le tapis</h2>
+            <br>
+            <br>
+            <p>C'est une méthode pratique qui consiste à calculer plusieurs avions en balayant S et FN et les comparer sur des 'tapis'.</p>
+            <p>Le tapis est une représentation d'une fonction de deux paramètres.</p>
+            <img src="/static/resultats/lp.png" width="700"/>
+            <img src="/static/resultats/atterissage.png" width="700"/>
+            <img src="/static/resultats/consommation.png" width="700"/>
+            <img src="/static/resultats/v_app.png" width="700"/>
+        </section>
+
+
+        <section id="Prix">
+            <h2>Le PRIX</h2>
+            <div id="Prix$">
+            <h3>Le prix en $</h3>
+            <p>Prix Cellule(M$) : {{prix[0]}} $.
+                <br>Prix Moteur (M$) : {{prix[1]}} $.
+                <br>Prix Avion (M$) : {{prix[2]}} $.
+                <br>Investissement totale (M$) : {{prix[3]}} $.
+                <br>DOC ($/vol) : {{prix[4]}} $.
+                <br>DOC/Nm.pax(%) : {{prix[5]}} %.
+                <br>I.O.C : {{prix[6]}} $.
+                <br>Revenu par vol ($) : {{prix[7]}} $.
+            </p>
+            </div>
+            <div id="troisiemeTrait"></div>
+            <div id="Prix€">
+              <h3>Le prix en €</h3>
+              <p>Prix Cellule(M€) : {{prix[8]}} €.
+                  <br>Prix Moteur (M€) : {{prix[9]}} €.
+                  <br>Prix Avion (M€) : {{prix[10]}} €.
+                  <br>Investissement totale (M€) : {{prix[11]}} €.
+                  <br>DOC (€/vol) : {{prix[12]}} €.
+                  <br>DOC/Nm.pax(%) : {{prix[5]}} %.
+                  <br>I.O.C : {{prix[13]}} €.
+                  <br>Revenu par vol (€) : {{prix[14]}} €.
+              </p>
+              </div>
+        </section>
+
+
+
+        <footer>
+            <div id="deuxiemeTrait"></div>
+            <div id="leslink">
+              <div id ="link1"><a href="/#presentation">A propos</a></div>
+              <div id ="link2"><a href="lesPropiete.html">Decouvrir</a></div>
+              <div id ="link3"><a href="avion.html">Créer son avion</a></div>
+              <div id="link4"><a href="route.html">Itinéraire de vol</a></div>
+            </div>
+      
+            <div id="copyrighteticon">
+              <div id="copyright">
+                <span>Copyright© 2022 | Alirida EL-SIBAI.All Rights Reserved.</span>
+              </div>
+              <div id="icons">
+                <a href="https://twitter.com/elisaerospace"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/elisa_aerospace/?hl=fr"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/elisa-aerospace/mycompany/"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>

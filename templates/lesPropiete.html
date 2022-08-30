@@ -1,0 +1,200 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Crée son avion</title>
+    
+    <link rel="stylesheet" href='/static/stylesheets/styles.css' />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo">
+            <a href="/"><img src="/static/media/ELISA.png" width="70" /></a>
+          </li>
+          <li>
+            <a href="route.html">Itinéraire de vol</a>
+          </li>
+          <li>
+            <a href="avion.html">Créer son avion</a>
+          </li>
+          <li>
+            <a href="lesPropiete.html">Découvrir</a>
+          </li>
+          <li>
+            <a href="/#presentation">A propos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="laConfiguration">
+        <h2>La Configuration</h2>
+        <div id="nfront">
+            <h3>Nombre De Passagers De Front</h3>
+            <p>Le nombre de passagers de front <b>(N)</b>, dépend de l'aménagement et du
+                nombre de passagers retenu <b>(Npax)</b>.
+                <br>
+                <br>
+                La connaissance de <b>Npax</b> et de <b>N</b> permet une mise en place des passagers
+                pour un aménagement déterminé (pointe Avant et arrière ainsi que la section cylindrique).
+                <br>
+                <br>
+                Afin de tenir compte des possibilités de développement de l'avion
+                , le nombre de rangées peut être en première approximation:
+                <br>
+                <ul>
+                    <li>20 à 30 pour un avion à un couloir.</li>
+                    <li>30 à 40 pour un avion à deux couloirs.</li>
+                </ul>
+            </p>
+            <figure>
+                <img src="/static/media/section.png" alt="section" height="300">
+                <figcaption>Section d'un A320 ayant comme <b>N</b>=6.</figcaption>
+            </figure>
+        </div>
+
+        <div id="issues">
+            <h3>Isues De Secours Et Evacuation</h3>
+            <p>Les avions commerciaux doivent satisfaire la règlementation CS-25 en matière de sécurité :
+                <ul>
+
+                    <li>L’évacuation de toutes les personnes doit être réalisée en moins de 90 secondes.</li>
+                    <li>Aucun passager ne doit passer devant plus de 2 sièges pour rejoindre un couloir.</li>
+                    <li>Le nombre minimal d’issues et leur taille sont également réglementés.</li>
+                
+                
+                </ul>
+                </p>
+                <figure>
+                    <img src="/static/media/issues.png" alt="issues" height="200">
+                    <figcaption>Nombre minimal d'issues</figcaption>
+                </figure>
+        </div>
+        <div id="autres">
+            <h3>Amenagement Annexes</h3>
+            <div id="annexes">
+                <p>
+                    L'exploitation commercial d'un avion ne peut se faire sans un certain
+                    nombre de commodités.
+                </p>
+                <h4>Les Toilettes</h4>
+                <p>
+                    Les toilettes sont souvent placées dans les parties évolutives
+                    du fuselage et près des issues de secours afin de réduire
+                    la place perdue et les effluves.
+                </p>
+                <br>
+                <h4>Galleys</h4>
+                <p>
+                    Ce sont les meubles contenant le matériel de cuisine(fours,
+                    réfrigérateurs, poubelles...) et les chariots de distribution.
+                </p>
+                <br>
+                <h4>Équipages</h4>
+                <p>
+                    Le poste de pilotage se trouve généralement dans la pointe avant
+                    de l'avion.
+                </p>
+                <br>
+                <h4>La Soute</h4>
+                <p>
+                    La partie inférieure du fuselage de la plupart des avions
+                    est utilisée pour transporter du fret et des bagages.
+                </p>
+
+            </div>
+
+        </div>
+      
+    </section>
+
+    <section id="Bouclage">
+        <h2>Bouclage Masse-Performance</h2>
+        <p>
+            Apres avoir initié quelque valeur qu'est le Mach,
+            la distance franchissable de l'avion ainsi que le nombre de 
+            passagers, ces valeurs entrent dans une boucle qui va s'assué
+            que le calcul préliminaire.
+            <br>
+            Les valeurs données par l'utilisateur vont permettre au programme de 
+            calculer l'aérodynamique de l'avion, la propulsion nécessaire à ce dernier 
+            et enfin la masse de l'appareil.
+            <br>
+            Le but de ce bouclage est que la masse du fuel dans l'appareil et la masse
+            nécessaire pour franchir la distance demandée ait un écart presque nul. 
+        </p>
+        <figure>
+            <img src="/static/media/bouclage-removebg-preview.png" alt="bouclage" height="500">
+            
+            <figcaption>Bouclage masse-performance</figcaption>
+        </figure>
+    </section>
+
+    <section id="Resultat">
+        <h2>Les Résultats</h2>
+        <p>
+            Après que le bouclage masse-performance converge plusieurs variables 
+            apparaisse comme la <b>MTOW</b>(masse maximale au décollage), les les paramètres aérodynamiques etc... qui permet de determiner le diagramme du <b> Charge Marchande-
+            Distance franchissable </b>, <b>Lp</b>(longueur de la piste),
+            <b>DOC</b>(Direct operating cost)...
+            <br>
+            <br>
+            Ces résultats permettant la présentation de l'avion aux compagnies aériennes sous forme d'une plaquette ou sont présentés les points suivants:
+
+            <ul >
+                <li>Cahier des charges résumé ou objectif.</li>
+                <li>Choix architecturaux et technologiques(aérodynamique, commandes de vols, matériaux, systèmes...).
+                </li>
+                <li>Masses caractéristiques.</li>
+                <li>Plan 3 vues.</li>
+                <li>Section du fuselage et aménagement.</li>
+                <li>Capacité des soutes.</li>
+                <li>Poste de pilotage.</li>
+                <li>aspect operationnels(opération au sol, limitations piste,
+                    bruits...).
+                </li>
+                <li>Performances et coûts.</li>
+                <li>Les différents diagrammes et courbes.</li>
+            </ul>
+            <p>
+              Ces plaquettes, rédigées le plus souvent en anglais permettent
+                aussi de placer l'avion par rapport à la concurrence.
+            </p>
+
+        </p>
+    </section>
+    
+
+    <footer>
+      <div id="deuxiemeTrait"></div>
+      <div id ="leslink">
+        <div id ="link1"><a href="/#presentation">A propos</a></div>
+        <div id ="link2"><a href="lesPropiete.html">Decouvrir</a></div>
+        <div id ="link3"><a href="avion.html">Créer son avion</a></div>
+        <div id="link4"><a href="route.html">Itinéraire de vol</a></div>
+      </div>
+        
+        
+      
+      <div id="copyrighteticon">
+        <div id="copyright">
+          <span>Copyright© 2022 | Alirida EL-SIBAI.All Rights Reserved.</span>
+        </div>
+        <div id="icons">
+          <a href="https://twitter.com/elisaerospace"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/elisa_aerospace/?hl=fr"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/school/elisa-aerospace/mycompany/"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

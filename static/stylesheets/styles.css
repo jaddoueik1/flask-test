@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Dancing+Script&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ************NAVBAR**************** */
+
+nav{
+    background-color: #FFFAE1;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0.85;
+    position: fixed;
+}
+
+header li{
+    font-size: 1.2em;
+    float: right;
+}
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 20px 10px;
+    
+}
+header li a img{
+    margin-right: 20px;
+    margin-top: -10px;
+    
+}
+
+
+#logo{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    float: left;
+    
+}
+
+/*********IMAGE Principal*********/
+
+#imagePrincipal{
+    padding-top: 60px;
+    background: url(/static/media/principal12.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 700px;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: brown;
+    font-size: 6em;
+    margin-top: 150px;
+    text-shadow: 1px 3px 2px black;
+}
+
+#premierTrait{
+    height: 2px;
+    width: 500px;
+    margin:-3px auto;
+    background-color: #FFFAE1;
+    box-shadow: 1px 3px 2px black;
+}
+h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px black;
+       
+
+}
+
+/*********Presentation*******/
+#presentation{
+    height: 400px;
+    background-color: antiquewhite;
+    padding: 1px;
+    font-size: 17px;
+}
+#Apropos h2{
+    text-decoration: underline;
+}
+#Apropos {
+    padding:0px 20%;
+    
+}
+
+#Apropos p{
+    text-indent: 50px;
+}
+
+
+
+/*********Proprieter*******/
+#lespropieter{
+    
+    background-color: #FFFAE1;
+    justify-content: space-between;
+    padding: 5px 10% 50px 10%;
+}
+#lespropieter h2{
+    text-align: center;
+    font-size: 2.3em;
+    text-decoration: underline;    
+    
+
+}
+.imagespropriete h4{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 50px 0 0 0;
+    margin: 15px;
+    font-weight: bold;
+
+}
+.imagespropriete img{
+    box-shadow: 3px 4px 5px 4px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.imagespropriete img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.8s ease-in-out;
+}
+/*************footer**************/
+
+footer{
+    background-color: #524a3a;
+    color: #FFFAE1;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+
+#leslink div{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1em;
+    color: #FFFAE1;
+    text-decoration: underline;
+    
+
+}
+
+#deuxiemeTrait{
+    height: 1px;
+    width: 75%;
+    background-color: #FFFAE1;
+    margin: 60px auto;
+}
+
+#copyrighteticon{
+
+    display: flex;
+    margin-bottom: 20px;
+    padding:50px 10%;
+
+}
+#copyright{
+    width: 50%;
+    text-align: left;
+    color: #FFFAE1;
+    font-size: 12px;
+}
+
+#icons{
+    width: 50%;
+    text-align: right;
+}
+#icons a{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #FFFAE1;
+}
+#icons a:hover{
+    transform: scale(1.5);
+    transition: 0.1s;
+}
+
+/******les propriete*****/
+
+#laConfiguration {
+    font-family: 'Advent Pro', sans-serif;
+    height: 2200px;
+    background-color: antiquewhite;
+    padding: 1px;
+    font-size: 17px;
+    padding:30px 20%;
+    
+    
+}
+
+#laConfiguration h2{
+    font-size: 50px;
+    text-align: center;
+    color: #04385d;
+    text-shadow: 1px 3px 2px rgba(255, 0, 0, 0.251);
+    font-family: 'Dancing Script', cursive;
+
+
+}
+#laConfiguration h3{
+    text-align: center;
+    color: #8b123b;
+    font-size: 30px;
+    text-shadow: 1px 3px 2px rgba(255, 0, 0, 0.251);
+    padding:60px 0 0 0;
+    text-decoration: underline;
+
+}
+
+#laConfiguration figure{
+    padding: 30px 0 0 0;
+}
+
+#laConfiguration h4{
+    padding: 10px 0 0 0;
+    text-decoration: lightblue wavy underline ;
+}
+
+
+#Bouclage{
+    font-family: 'Advent Pro', sans-serif;
+    height: 960px;
+    background-color: #e0dccf;
+    padding: 1px;
+    font-size: 17px;
+    padding:1px 20%;
+}
+
+#Bouclage h2{
+    font-size: 50px;
+    text-align: center;
+    color: #04385d;
+    text-shadow: 1px 3px 2px rgba(255, 0, 0, 0.251);
+    font-family: 'Dancing Script', cursive;
+    padding: 0 0 50px 0;
+
+}
+#Bouclage figure{
+    padding: 30px 0 0 0;
+}
+
+#Resultat {
+    font-family: 'Advent Pro', sans-serif;
+    height: 640px;
+    background-color: #d1c9bd;
+    font-size: 17px;
+    padding:1px 20%;
+    
+}
+
+#Resultat h2{
+    font-size: 50px;
+    text-align: center;
+    color: #04385d;
+    text-shadow: 1px 3px 2px rgba(255, 0, 0, 0.251);
+    font-family: 'Dancing Script', cursive;
+    padding: 0 0 50px 0;
+
+}
+#Resultat ul{
+    padding-left: 40px;
+}
+#Resultat li{
+
+    list-style-type:circle;
+
+    
+}
+
+figcaption{
+    padding: 10
+    px;
+    
+}
+
+/*********Avion*************/
+
+#form {
+
+    background: url(/static/media/main.jpg) no-repeat;
+    background-size: 150%;
+    background-position: -100px 0;
+    height: 1006px;
+    
+    
+}
+
+#main{
+    padding: 100px 0 0 25%;
+    font-family: 'Advent Pro', sans-serif;
+    width: 660px;
+    font-style: italic;
+    
+
+}
+div.Entrerdonnée{
+    background-color: rgba(174, 169, 22, 0.774);
+    font-size: 17px;
+    border-radius: 20px;
+    color: antiquewhite;
+}
+
+form#Entrerdonnée{
+    padding: 30px 0 0 50px;
+}
+input#submit{
+    width: 560px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: rgba(141, 137, 17, 0.902);
+    color: #FFFAE1;
+    border: 1px solid rgba(141, 137, 17, 0.902);
+    box-shadow: 1px 3px 2px black;
+    
+    margin-bottom: 20px;
+
+}
+/********************/
+
+#intro_avion{
+    font-family: 'Advent Pro', sans-serif;
+    height: 710px;
+    background-color: #c6b7a0;
+    padding:1px 10%;
+    
+    
+}
+
+#intro_avion h1{
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 1rem;
+}
+
+#intro_avion p{
+    font-size: 19px;
+    padding:20% 0 0 0;
+    
+
+}
+#aircraft{
+    font-family: 'Advent Pro', sans-serif;
+    height: 2000px;
+    background-color: #afb1b1;
+    padding:1px 10%;
+    
+
+}
+#aircraft h2{text-align: center;
+    color: #bb8549;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px black;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+}
+
+#aircraft img{
+    padding: 10% 0 0 10%;
+    
+
+}
+
+#payload_di{
+    font-family: 'Advent Pro', sans-serif;
+    height: 1000px;
+    background-color: #f3e1c1;
+    padding:1px 10%;
+    
+}
+#payload_di img{
+    padding: 10% 0 0 10%;
+    
+
+}
+#payload_di h2{
+    text-align: center;
+    color: #bb8549;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px black;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+}
+
+
+#graphes{
+    font-family: 'Advent Pro', sans-serif;
+    height: 2200px;
+    background-color: #847a6a;
+    padding:1px 10%;
+    font-size: 18px;
+    
+}
+#graphes img{
+    padding: 10% 0 0 20%;
+    
+
+}
+#graphes h2{
+    text-align: center;
+    color: #bb8549;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px black;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+}
+
+
+#Prix{
+    font-family: 'Advent Pro', sans-serif;
+    height: 950px;
+    background-color: #fbeace;
+    padding:1px 10%;
+    font-size: 18px;
+    
+}
+#Prix h2{
+    text-align: center;
+    color: #bb8549;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px black;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+}
+
+#Prix h3{
+    text-align: center;
+    color: #dfc43e;
+    font-size: 30px;
+    text-shadow: 1px 2px 2px black;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+    padding:5% 0;
+}
+#Prix€ h3{
+    text-align: center;
+    color: #dfc43e;
+    font-size: 30px;
+    text-shadow: 1px 2px 2px black;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+    padding-top: 1px; 
+}
+
+#troisiemeTrait{
+    height: 2px;
+    width: 75%;
+    background-color: black;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/*******************/
+
+.autocomplete {
+    position:relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #ff0505; 
+  }
+  
+  /*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+#route_principale{
+    font-family: 'Advent Pro', sans-serif;
+    height: 620px;
+    background-color: #b0b29e;
+    padding:1px 10%;
+    font-size: 18px;
+}
+
+#section1{
+    font-family: 'Advent Pro', sans-serif;
+    height: 280px;
+    background-color: #868875;
+    padding:1px 10%;
+    font-size: 18px;
+
+
+}
+
+#section1 .autocomplete{
+    
+    padding:30px 0 10px 30%;
+    
+
+
+}
+#section2 .autocomplete{
+    
+    padding:30px 0 10px 30%;
+    
+
+
+}
+
+#section2{
+    font-family: 'Advent Pro', sans-serif;
+    height: 220px;
+    background-color: #3b5466;
+    padding:1px 10%;
+    font-size: 18px;
+
+
+}
+
+/*******************/
+
+#resultat_route{
+    font-family: 'Advent Pro', sans-serif;
+    height: 900px;
+    background-color: #b0b29e;
+    padding:80px 10%;
+    font-size: 20px;
+    
+}
+#resultat_route img{
+    padding: 0 0 0 10%;
+    
+
+}
+
+#resultat_route h2{
+    text-align: center;
+    color: #bb8549;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px black;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+}
+
+/*******************/
+
+#resultat_route2{
+    font-family: 'Advent Pro', sans-serif;
+    height: 1600px;
+    background-color: #b0b29e;
+    padding:80px 10%;
+    font-size: 20px;
+    
+}
+#resultat_route2 img{
+    padding: 0 0 0 0;
+    
+
+}
+
+#resultat_route2 h2{
+    text-align: center;
+    color: #bb8549;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px black;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+    padding: 0 0 5% 0;
+}
