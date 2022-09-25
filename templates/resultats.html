@@ -9,27 +9,33 @@
         
     </head>
     <body>
-        <header>
-            <nav id="avion_nav">
-              <ul>
-                <li id="logo">
-                    <a href="/"><img src="/static/media/ELISA.png" width="70" /></a>
-                  </li>
-                  <li>
-                    <a href="route.html">Itinéraire de vol</a>
-                  </li>
-                  <li>
-                    <a href="avion.html">Créer son avion</a>
-                  </li>
-                  <li>
-                    <a href="lesPropiete.html">Découvrir</a>
-                  </li>
-                  <li>
-                    <a href="/#presentation">A propos</a>
-                  </li>
-              </ul>
-            </nav>
-          </header>
+      <div class="loader">
+        <img src="/static/media/loading2.gif" />
+        <figcaption> Loading ...</figcaption>
+        
+      </div>
+
+      <header>
+          <nav id="avion_nav">
+            <ul>
+              <li id="logo">
+                  <a href="/"><img src="/static/media/ELISA.png" width="70" /></a>
+                </li>
+                <li>
+                  <a href="route.html">Itinéraire de vol</a>
+                </li>
+                <li>
+                  <a href="avion.html">Créer son avion</a>
+                </li>
+                <li>
+                  <a href="lesPropiete.html">Découvrir</a>
+                </li>
+                <li>
+                  <a href="/#presentation">A propos</a>
+                </li>
+            </ul>
+          </nav>
+        </header>
 
 
         <section id="intro_avion">
@@ -111,25 +117,31 @@
 
 
 
-        <footer>
-            <div id="deuxiemeTrait"></div>
-            <div id="leslink">
-              <div id ="link1"><a href="/#presentation">A propos</a></div>
-              <div id ="link2"><a href="lesPropiete.html">Decouvrir</a></div>
-              <div id ="link3"><a href="avion.html">Créer son avion</a></div>
-              <div id="link4"><a href="route.html">Itinéraire de vol</a></div>
+      <footer>
+          <div id="deuxiemeTrait"></div>
+          <div id="leslink">
+            <div id ="link1"><a href="/#presentation">A propos</a></div>
+            <div id ="link2"><a href="lesPropiete.html">Decouvrir</a></div>
+            <div id ="link3"><a href="avion.html">Créer son avion</a></div>
+            <div id="link4"><a href="route.html">Itinéraire de vol</a></div>
+          </div>
+    
+          <div id="copyrighteticon">
+            <div id="copyright">
+              <span>Copyright© 2022 | Alirida EL-SIBAI.All Rights Reserved.</span>
             </div>
-      
-            <div id="copyrighteticon">
-              <div id="copyright">
-                <span>Copyright© 2022 | Alirida EL-SIBAI.All Rights Reserved.</span>
-              </div>
-              <div id="icons">
-                <a href="https://twitter.com/elisaerospace"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/elisa_aerospace/?hl=fr"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/school/elisa-aerospace/mycompany/"><i class="fa fa-linkedin"></i></a>
-              </div>
+            <div id="icons">
+              <a href="https://twitter.com/elisaerospace"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/elisa_aerospace/?hl=fr"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/school/elisa-aerospace/mycompany/"><i class="fa fa-linkedin"></i></a>
             </div>
-          </footer>
+          </div>
+        </footer>
+        <script type="text/javascript">
+          window.addEventListener("load",function(){
+            const loader = document.querySelector(".loader");
+            loader.className +=" hidden"
+          })
+        </script>
     </body>
 </html>

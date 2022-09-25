@@ -1681,7 +1681,7 @@ class eco_premiere:
         mini1 = 20
         maxl = []
         lx = []
-        nb_places_tot_er = math.ceil(0.4*self.npax)
+        nb_places_tot_er = math.ceil(0.1*self.npax)
         state = False
         MTOW = self.initialisation()[0]
         MZFW = self.initialisation()[1]

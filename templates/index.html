@@ -15,6 +15,11 @@
   </head>
 
   <body>
+    <div class="loader">
+      <img src="/static/media/loading2.gif" />
+      
+      
+    </div>
     <header>
       <nav>
         <ul>
@@ -87,7 +92,7 @@
         /></a>
       </div>
       <div class="imagespropriete">
-        <h4>Les&nbsp;Résultats</h4>
+         <h4>Les&nbsp;Résultats</h4>
         <a href="lesPropiete.html#Resultat"
           ><img src="/static/media/diagramme.jpg" alt="diagramme"
         /></a>
@@ -120,5 +125,13 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      window.addEventListener("load",function(){
+        const loader = document.querySelector(".loader");
+        loader.className +=" hidden"
+      })
+    </script>
+
   </body>
 </html>

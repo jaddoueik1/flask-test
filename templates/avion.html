@@ -10,10 +10,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   </head>
 
   <body>
+    <div class="loader" style="display:none;">
+      <img src="/static/media/loading2.gif" alt="" />
+    </div>
+    
+      
+    
     <header>
+      
       <nav>
         <ul>
           <li id="logo">
@@ -95,7 +103,7 @@
           <span id="classeEcofirstaff">Classe First-Aff-Eco</span>
           <br /><br />
 
-          <input type="submit" value="Calculer" name="submit" id="submit" />
+          <input type="submit" value="Calculer" name="submit" id="submit" onclick="$('.loader').show();"/>
 
           </div>
         </form>
@@ -122,5 +130,13 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      (function (d) {
+        d.getElementById('form').onsubmit = function () {
+          d.getElementById('submit').style.display = 'none';
+          d.getElementById('loader').style.display = 'none';
+        };
+      }(document));
+      </script>
   </body>
 </html>

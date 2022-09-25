@@ -1517,6 +1517,7 @@ class eco_affaire_er:
         ax = plt.axes(projection='3d')
         ax.plot_surface(S, FN, Cs)
         plt.title('Consommation(S,FN)')
+        
 
         plt.savefig('static/resultats/consommation.png', dpi=1200)
 
@@ -1528,8 +1529,8 @@ class eco_affaire_er:
         mini1 = 20
         maxi = 0
         maxl = []
-        nb_places_tot_er = math.ceil(0.2*self.npax)
-        nb_places_tot_affaire = math.ceil(0.3*self.npax)
+        nb_places_tot_er = math.ceil(0.1*self.npax)
+        nb_places_tot_affaire = math.ceil(0.17*self.npax)
         state = False
         MTOW = self.initialisation()[0]
         MZFW = self.initialisation()[1]

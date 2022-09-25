@@ -1660,7 +1660,7 @@ class eco_affaire:
         sref = self.sref
         i = 0
 
-        passagers = 0.3*self.npax
+        passagers = 0.17*self.npax
         nb_places_tot_affaire = math.ceil(passagers)
         while i < 10:
             maxi = 0
