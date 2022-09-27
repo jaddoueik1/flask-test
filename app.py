@@ -5,7 +5,7 @@ from mypackage.eco_affaire import eco_affaire
 from mypackage.eco_affaire_er import eco_affaire_er
 from mypackage.eco_premiere import eco_premiere
 from mypackage.MTOW_dig import MTOWdig
-from mypackage.itineraire_de_vol import distance_plot,company_plot
+from mypackage.itineraire_de_vol import distance_plot,company_plot,drapeau,direct
 
 app = Flask(__name__)
 
@@ -104,7 +104,14 @@ def route():
 def trace(air_dep,air_arrive):
 
     distance=distance_plot(air_dep,air_arrive)
-    return render_template('resultatroute.html', distance=distance,air_dep=air_dep,air_arrive=air_arrive)
+    pays_dep=drapeau(air_dep,air_arrive)[0]
+    airport_dep=drapeau(air_dep,air_arrive)[1]
+    pays_arr=drapeau(air_dep,air_arrive)[2]
+    airport_arr=drapeau(air_dep,air_arrive)[3]
+    vol=direct(air_dep,air_arrive)[0]
+    nb_company=direct(air_dep,air_arrive)[1]
+
+    return render_template('resultatroute.html', nb_company=nb_company,pays_dep=pays_dep,airport_dep=airport_dep, pays_arr=pays_arr,airport_arr=airport_arr,vol=vol,distance=distance,air_dep=air_dep,air_arrive=air_arrive)
 
 
 @app.route('/resultat_route2.html?company=<company>')

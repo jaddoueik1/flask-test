@@ -581,7 +581,7 @@ input#submit{
 
 #resultat_route{
     font-family: 'Advent Pro', sans-serif;
-    height: 900px;
+    height: 1100px;
     background-color: #b0b29e;
     padding:80px 10%;
     font-size: 20px;
@@ -589,6 +589,7 @@ input#submit{
 }
 #resultat_route img{
     padding: 0 0 0 10%;
+    display: inline-block;
     
 
 }
@@ -658,3 +659,18 @@ input#submit{
         visibility: hidden;
     }
 }
+
+#Depart{
+    float: left;
+    padding-top: 200px;
+    
+    
+}
+
+#Arrive{
+    float: right;
+    padding-top: 200px;
+    
+    
+}
+

@@ -10,6 +10,11 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <img src="/static/media/loading2.gif" />
+      
+      
+    </div>
     <header>
       <nav id="avion_nav">
         <ul>
@@ -37,11 +42,32 @@
       <br />
       <br />
       <p>
-        La distance entre <b>{{air_dep}}</b> et <b>{{air_arrive}}</b> est de :
-        <i>{{distance}} KM.</i>
+        {{vol}} de <b>{{airport_dep}}, {{pays_dep}}</b> vers <b>{{airport_arr}}, {{pays_arr}}</b>.
+        Il exite <b>{{nb_company}} Compagnie aérienne</b> qui assure ce vol.
       </p>
+      <br />
+      <br />
+      <br />
 
-      <img src="/static/resultats/route.png" /> <br />
+      
+
+      <div style="display:inline-block;vertical-align:top;"> 
+        <img src="/static/resultats/depart.png" /> 
+      </div> 
+      
+
+      <div style="display:inline-block;vertical-align:top;"> 
+        <img src="/static/media/flightRout.png" />
+      </div>
+
+      <div style="display:inline-block;vertical-align:top;"> 
+        <img src="/static/resultats/arrive.png" /> 
+      </div> 
+      
+      <p style="text-align:center;padding: 100px 0 0 100px;">Distance <b>{{distance}}</b> Km</p>
+       
+      <img src="/static/resultats/route.png" />
+
     </section>
 
     <footer>
@@ -70,5 +96,11 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      window.addEventListener("load",function(){
+        const loader = document.querySelector(".loader");
+        loader.className +=" hidden"
+      })
+    </script>
   </body>
 </html>

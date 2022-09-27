@@ -10,6 +10,12 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <img src="/static/media/loading2.gif" />
+      
+      
+    </div>
+    
     <header>
       <nav id="avion_nav">
         <ul>
@@ -34,9 +40,9 @@
 
     <section id="resultat_route2">
       <h2>Le Résultat</h2>
-
-      <img src="/static/resultats/route.png" width="900" />
-      <img src="/static/resultats/routeZoom.png" width="900" />
+      
+      <img src="/static/resultats/routeairline.png" width="900" />
+      <img src="/static/resultats/routeZoomairline.png" width="900" />
     </section>
 
     <footer>
@@ -65,5 +71,11 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      window.addEventListener("load",function(){
+        const loader = document.querySelector(".loader");
+        loader.className +=" hidden"
+      })
+    </script>
   </body>
 </html>

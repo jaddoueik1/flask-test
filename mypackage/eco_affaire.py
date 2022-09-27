@@ -1545,22 +1545,22 @@ class eco_affaire:
         # Revenu Par vol
         RP =self.Coef_rempli*self.r_action* ((self.npax-math.ceil(0.3*self.npax))*(1+40/200)*self.prix_billet_eco +((math.ceil(0.3*self.npax))*(1+40/200))*self.prix_billet_aff)
 
-        Prix_Cellule_d =PC/(10**6)
-        Prix_Moteur_d =PM/(10**6)
-        Prix_Avion_d=PA/(10**6)
-        Investissement_totale_d =IT/(10**6)
-        DOC_d =DOC
-        DOC_Nm_pax_d=DOC_par_Nm_pax
-        IOC_d =IOC
-        Revenu_par_vol_d = RP
+        Prix_Cellule_d = math.ceil(PC/(10**6))
+        Prix_Moteur_d = math.ceil(PM/(10**6))
+        Prix_Avion_d= math.ceil(PA/(10**6))
+        Investissement_totale_d = math.ceil(IT/(10**6))
+        DOC_d = math.ceil(DOC)
+        DOC_Nm_pax_d= math.ceil(DOC_par_Nm_pax)
+        IOC_d = math.ceil(IOC)
+        Revenu_par_vol_d = math.ceil(RP)
         #Coef_de_remplissage_au_pt_d_equilibre=coe_pt_eq*100
-        Prix_Cellule_e =PC*0.94/(10**6)
-        Prix_Moteur_e =PM*0.94/(10**6)
-        Prix_Avion_e=PA*0.94/(10**6)
-        Investissement_totale_e =IT*0.94/(10**6)
-        DOC_e =DOC*0.94
-        IOC_e =IOC*0.94
-        Revenu_par_vol_e = RP*0.94
+        Prix_Cellule_e = math.ceil(PC*0.94/(10**6))
+        Prix_Moteur_e = math.ceil(PM*0.94/(10**6))
+        Prix_Avion_e= math.ceil(PA*0.94/(10**6))
+        Investissement_totale_e = math.ceil(IT*0.94/(10**6))
+        DOC_e = math.ceil(DOC*0.94)
+        IOC_e = math.ceil(IOC*0.94)
+        Revenu_par_vol_e = math.ceil(RP*0.94)
 
         return Prix_Cellule_d ,Prix_Moteur_d ,Prix_Avion_d,Investissement_totale_d ,DOC_d,DOC_Nm_pax_d,IOC_d,Revenu_par_vol_d ,Prix_Cellule_e ,Prix_Moteur_e ,Prix_Avion_e,Investissement_totale_e ,DOC_e,IOC_e,Revenu_par_vol_e 
 
