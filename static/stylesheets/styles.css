@@ -514,6 +514,7 @@ input#submit{
     top: 100%;
     left: 0;
     right: 0;
+    
   }
   
 .autocomplete-items div {
@@ -521,11 +522,13 @@ input#submit{
     cursor: pointer;
     background-color: #fff; 
     border-bottom: 1px solid #ff0505; 
+    
   }
   
   /*when hovering an item:*/
 .autocomplete-items div:hover {
     background-color: #e9e9e9; 
+    
   }
   
   /*when navigating through the items using the arrow keys:*/
