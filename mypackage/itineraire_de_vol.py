@@ -79,8 +79,7 @@ def direct(dep, ariv):
     if vol == '':
         vol = "Ce n'est pas un vol Direct "
 
-    print(vol)
-    print(nb_airlines)
+    
 
     return vol, nb_airlines
 
@@ -105,7 +104,7 @@ def drapeau(dep, ariv):
             Arrive = fp.get_flag_img(pays_arr)
             Arrive.save('static/resultats/arrive.png')
 
-    print(pays_dep, airport_dep, pays_arr, airport_arr)
+    
 
     return pays_dep, airport_dep, pays_arr, airport_arr
 

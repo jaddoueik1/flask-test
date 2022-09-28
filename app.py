@@ -22,7 +22,7 @@ def avion():
         mach = request.form.get('mach','0.85')
         allongV = request.form.get('allongV','10')
         travel_class = request.form.get('options','classeEco')
-        print(travel_class)
+        
         
         return redirect(url_for('resultats', npax=npax, raction=raction,coefremp=coefremp,mach=mach,allongV=allongV, travel_class=travel_class))
 
@@ -97,7 +97,7 @@ def route():
 
 
     else:
-        print('here')
+        
         return render_template('route.html')
 
 @app.route('/resultatroute.html?air_dep=<air_dep>&air_arrive=<air_arrive>')
@@ -122,6 +122,6 @@ def trace_company(company):
 
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
 
     
