@@ -1,10 +1,6 @@
 
 import numpy as np
 from cmath import log10
-import tkinter as tk
-from tkinter import *
-from tkinter import ttk
-from tkinter import messagebox
 import math
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle

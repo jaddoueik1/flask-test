@@ -7,6 +7,11 @@ from mypackage.eco_premiere import eco_premiere
 from mypackage.MTOW_dig import MTOWdig
 from mypackage.itineraire_de_vol import distance_plot,company_plot,drapeau,direct
 
+"""
+set FLASK_ENV=development
+python app.py
+"""
+
 app = Flask(__name__)
 
 @app.route('/')

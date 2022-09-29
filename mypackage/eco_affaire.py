@@ -1,8 +1,4 @@
 import numpy as np
-import tkinter as tk
-from tkinter import *
-from tkinter import ttk
-from tkinter import messagebox
 import math
 from math import *
 from cmath import log10

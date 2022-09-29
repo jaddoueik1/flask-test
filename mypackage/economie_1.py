@@ -3,14 +3,9 @@ from matplotlib import projections
 import numpy as np
 import cv2
 from cmath import log10
-import tkinter as tk
-from tkinter import *
-from tkinter import ttk
-from tkinter import messagebox
 import math
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
-from tkinter import *
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg,
                                                NavigationToolbar2Tk)
@@ -1992,18 +1987,7 @@ class economie:
 
                 sref = sref1
             i = i+1
-        # print(nfront_rang_reduit1)
-        # print(Rang_redui_AR)
-        # print(lfus)
-        """
-        print(finesse, sref)
-        print(sref)
-        print(Czopt)
-        print(Cxopt)
-        print(A, B, C, D, E, G)
-        print('MTOW', MTOW, 'MZFW', MZFW, 'Mcarb', Mcarb, 'F', F)"""
-        # self.TOC(FN0, Mcarb, MTOW, self.boucle_conv(A, B_masse, C, D, E, G, B1, nourriture)[
-        # 0], self.boucle_conv(A, B_masse, C, D, E, G, B1, nourriture)[1], V_croisiere, MZFW)
+        
         best_combinaison1 = ["L_surD: ", maxi, "npfront: ", nfront1, 'Place totale:', place_totale1, "Rang tot: ", rang_totale1, "rang AV: ", nb_rang_AV1, "rang cyl: ", nb_rang_cylindre1, "rang Ar:", nb_rang_AR1,
                              'nb rang reduit AV', nbrangreduit_AV, 'nb rang non reduit AV', nbrang_non_reduit_AV, 'nb rang reduit AR', nbrangreduit_AR, 'nb rang non reduit AR', nbrang_non_reduit_AR, 'front reduit AR', nfront_rang_reduit1]
 
