@@ -9,4 +9,4 @@ dependencies:
   - pandas==1.4.4
   - pip=22.2.2
   - pip:
-    - -r requirements.txt
+    - flagpy==1.0.3
