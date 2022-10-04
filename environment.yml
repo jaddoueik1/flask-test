@@ -1,4 +1,4 @@
-name: my_env
+name: create_aircraft
 channels:
   - conda-forge
 dependencies:
