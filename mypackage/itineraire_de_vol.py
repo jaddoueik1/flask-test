@@ -1,12 +1,9 @@
-from xml.dom.expatbuilder import parseString
-import cartopy.crs as ccrs
-from matplotlib import markers
-import matplotlib.pyplot as plt
 import csv
-import pandas as pd
 import math
+
+import cartopy.crs as ccrs
 import flagpy as fp
-from PIL import Image
+import matplotlib.pyplot as plt
 
 
 def distance_plot(dep, ariv):

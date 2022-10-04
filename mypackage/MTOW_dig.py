@@ -1,15 +1,7 @@
-
-from matplotlib import projections
-import numpy as np
-from cmath import log10
 import math
+from cmath import log10
+
 import matplotlib.pyplot as plt
-from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg,
-                                               NavigationToolbar2Tk)
-from mpl_toolkits.mplot3d import Axes3D
-
-
 
 
 class MTOWdig:

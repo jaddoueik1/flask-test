@@ -1,9 +1,9 @@
-import numpy as np
 import math
 from cmath import log10
-import matplotlib.pyplot as plt
-from matplotlib.patches import Rectangle
 
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Rectangle
 
 # self.npax=320
 
